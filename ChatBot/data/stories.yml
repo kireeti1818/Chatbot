@@ -1,0 +1,99 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: price path 
+  steps:
+  - intent: pricing_platform
+  - action: utter_price
+
+- story: Schedule path 1
+  steps:
+  - intent: explain_Schedules
+  - action: utter_Schedules
+
+# - story: Schedule path 2
+#   steps:
+#   - intent: explain_Schedules
+#   - action: utter_Schedules
+
+- story: freeTime path
+  steps:
+  - intent: free_time_limit
+  - action: utter_free_time_limit
+
+- story: vacationMode path
+  steps:
+  - intent: Vacation_Mode
+  - action: utter_Vacation_Mode
+
+- story: locatorFeatures path
+  steps:
+  - intent: locator_features
+  - action: utter_locator_features
+
+
+- story: familyLocatorFeatures path
+  steps:
+  - intent: family_locator_features
+  - action: utter_family_locator_features
+  
+
+- story: shareChildLocation path
+  steps:
+  - intent: share_child_location
+  - action: utter_share_child_location
+
+- story: geoFencingFeature path
+  steps:
+  - intent: geo_fencing_feature
+  - action: utter_geo_fencing_feature
+
+- story: socialMediaMonitoring path
+  steps:
+  - intent: social_media_monitoring
+  - action: utter_social_media_monitoring
+
+- story: internetFilter path
+  steps:
+  - intent: internet_filter
+  - action: utter_internet_filter
+
+
+- story: blockApp path
+  steps:
+  - intent: block_apps
+  - action: utter_block_app
+
+
+- story: appTimeLimit path
+  steps:
+  - intent: app_time_limit
+  - action: utter_app_time_limit

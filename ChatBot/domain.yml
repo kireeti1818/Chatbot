@@ -1,0 +1,92 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - pricing_platform
+  - explain_Schedules
+  - setup_Schedules
+  - free_time_limit
+  - locator_features
+  - Vacation_Mode
+  - family_locator_features
+  - share_child_location
+  - get_child_location
+  - geo_fencing_feature
+  - social_media_monitoring
+  - app_time_limit
+  - block_apps
+  - internet_filter
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_price:
+  - text: "LITE $2.99 /month\nSTANDARD $4.99 /month\nPREMIUM $7.99 /month"
+
+  utter_free_time_limit:
+  - text: "You can set it in schedules bar. It is indicated in Green shade\nFunctionality available of this period\nDuring this time, default restrictions  or customized filters will be applied \nYou can set limits for each day in the week and Mobicip offers a daily recommended free time limit based on your child's age.\nYour kids can use the device until they reach the time limit. Once the limit is reached, access to the device will be blocked.\nMobicip notifies your child when they have 15 minutes left of their free time. During this period, they can request extra time if needed.\n\n"
+
+  utter_Schedules:
+    - text: "Schedules allow parents to customize their child's device access during specific times by restricting apps and websites. \nTwo preset schedules are offered \n1) School \n    -Provides granular control over screen time. \n    -These cannot be deleted but can be customized or disabled. \n    -Preventing access to distracting apps and websites.\n\n2) Sleep\n    -Restricts device access entirely between preset hours(9 pm to 6 am).\n    -Parents can also create new schedules with custom filter settings .\n"
+  
+  utter_setup_Schedules:
+    - text: "Follow these steps to create new schedule\n  1)Press ADD from bottom tray.\n 2)Choose a title for schedule\n 3)Add days\n  4)Add start and end time, app/web categories,websites to be blocked."
+
+  utter_Vacation_Mode:
+    - text: "Turn on vacation mode\n   -It will remove all monitoring settings for a day or a specific number of days that you wish.\n   -You can end the mode manually or choose an end date to disable it.\n   -You will be able to set Free Time Limit and other filtering restrictions during Vacation Mode too.\n"
+
+  utter_locator_features:
+    - text: "Mobicip offers instant tracking of family members' mobile devices, providing peace of mind for parents.\nUsers can establish boundaries around commonly visited areas and receive notifications when their child enters or exits these locations.\nThe parent dashboard provides an activity timeline, allowing parents to view the places visited by their child.\nTo utilize the Locator feature, users must enable location permissions on both the parent and child apps during installation."
+
+  utter_family_locator_features:
+    - text: "Access the parent app and navigate to the family locator feature.\nSelect the child user whose location you want to view from the top of the screen.\nClick on the locator menu within the app interface.\nView the current location of the selected child if their device is online.\nIf the device is offline, you can still see their last known location when the device was active.\nAccess the Family Locator by selecting it from the hamburger menu located in the top left corner of the screen.\nIf your location is not visible in the Family Locator, ensure that Mobicip has permission to access your location on your parent device.\nTo grant Mobicip access to your location on your parent device, open the Mobicip app, tap Locator, then select "Allow while using App" in the popup, and finally change it to "Always Allow" in the subsequent popup.\nIf your children's locations are not visible, open the Mobicip app on their devices and grant location permissions accordingly.
+  
+  utter_share_child_location:
+    - text : "To share your location with any of your children\n   - click on Family share button in the map.\n   - Choose if you want to share your current or live location with the child\n   - click on Send."
+
+  
+  utter_geo_fencing_feature:
+    - text : "Users can mark a place by typing the address or using a pin on the map.\nPlaces can be categorized as Home, School, Dangerous, or Others.\nOnly one address can be marked for Home and School tags.\nBoundaries can be set to receive notifications when a child enters or leaves marked places.\nDefault boundary radius is set at 100 meters, adjustable up to 1000 meters by clicking the Hold button.\nEnsure to save the marked place after setting the desired parameters.\nTap Show Saved Places to view all the saved places for the child."
+
+  utter_social_media_monitoring:
+    - text : "Mobicip's latest version introduces Social Media monitoring for Instagram, Facebook, and Snapchat, available only on Android devices. This feature scans for harmful content across categories like Bullying, Sexual content, Violence, Drugs, and Self-Harm/Suicide, sending real-time alerts to parents. By actively monitoring their child's online interactions, Mobicip empowers parents to intervene and protect against potential risks in the digital space.\nSteps to follow to set Social media monitoring\n\n
+              For Facebook\n   - Visit your Mobicip account\n   - Click on your child for whom you wish to set up monitoring\n   - Select Social Media\n   - Enable Facebook monitoring.\n   - Access the next page and click on 'Let's Connect' to initiate the Facebook monitoring setup.\n   - You have two options\n     Option 1 - either provide your child's Facebook credentials directly\n       - Your child must accept the request within 30 days and connect their Facebook account for monitoring to begin.\n       - Once logged in with your child's Facebook credentials, you'll receive a confirmation screen indicating successful setup of Facebook monitoring for your child.\n      Option 2 -  send an email requesting your child to provide their Facebook credentials to Mobicip\nOnce successfully enabled, any harmful content will be flagged for your review.\nAny content related to the specified tags will be reported to you for further discussion with your child, and marking as resolved will remove the post from their flagged activity list.\n
+              For Instagram\n   - On your Mobicip account\n   - select your child for whom you want to set up monitoring\n   - Social Media\n   - Turn on Enable Instagram Monitoring.\nOnce done successfully, click on Social Media to view any flagged activities in Instagram.\n
+              For Snapchat\n   - On your Mobicip account\n   - select your child for whom you want to set up monitoring\n   - Social Media\n   - Turn on Enable Snapchat Monitoring.\nOnce done successfully, click on Social Media to view any flagged activities in Snapchat."
+  utter_internet_filter:
+    - text : "1)Access the Content Menu: Start from the bottom menu bar and select the Content menu.\n2)Navigate to Websites Tab: Within the Content menu, go to the Websites tab to find customization options.\nCustomize Web Categories:\n   Click on Content > Websites > Web Categories.\n   Toggle the blue button for each web category to allow or block it as per your preference.\nAllow/Block Specific Websites:\n   For allowed websites, navigate to Content > Websites > Allowed Websites and add the URLs you want to allow.
+              \n   For blocked websites, go to Content > Websites > Blocked Websites and add the URLs you want to block.\n   Use the Duplicate web settings link to apply settings across multiple children's profiles.
+              \nWhitelist Only Mode:\n   Under Allowed Websites, select Whitelist only mode to allow only specific websites and block all others.\n   Use this mode only if you want to restrict access strictly to the websites you've added to the allowed list.
+              \nSet Up Network Exemptions:\n   Go to Content > Websites > Networks.\n   Add a single IP address or a range of IP addresses that you wish to exempt from Mobicip's filter.
+              \nBlock Phrases/Keywords:\n   Navigate to Content > Websites > Phrases and Keywords.\n   add the keywords or phrases you want to block, one at a time."
+  utter_block_app:
+    - text : "To block apps\n   Navigate to Content > Apps > Blocked Apps in your Mobicip account.\n   To block by category, select the Social Media, Entertainment, or Games categories to block all apps within those categories.\n   To block individual apps, search for the app in the Play Store or App Store and add it to the blocked apps list. Remove the app from the list to allow access again.\n   On iOS, blocked apps will appear grayed out. On Android, a "blocked by Mobicip" screen will display."
+
+  utter_app_time_limit:
+    - text : "To Limit Apps usagae\n   Go to Content > Apps > Limit Apps.\n   Set time restrictions for Social Media, Game, and Entertainment Apps to control how long your child can use these apps.\n   Game time limits are only applicable to Android devices.\n   Once the limit is reached, the apps will be inaccessible with the same visual indicators as when they are blocked."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
