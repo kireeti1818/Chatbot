@@ -1,0 +1,153 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+# - story: sad path 1
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - intent: greet
+#   - action: utter_greet
+#   - intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - intent: deny
+#   - action: utter_goodbye
+
+- story: price path 
+  steps:
+  - intent: pricing_platform
+  - action: utter_price
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Schedule path 
+  steps:
+  - intent: explain_Schedules
+  - action: utter_Schedules
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: Schedule path 2
+  steps:
+  - intent: setup_Schedules
+  - action: utter_setup_Schedules
+
+- story: freeTime path
+  steps:
+  - intent: free_time_limit
+  - action: utter_free_time_limit
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: vacationMode path
+  steps:
+  - intent: Vacation_Mode
+  - action: utter_Vacation_Mode
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: locatorFeatures path
+  steps:
+  - intent: locator_features
+  - action: utter_locator_features
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: familyLocatorFeatures path
+  steps:
+  - intent: family_locator_features
+  - action: utter_family_locator_features
+  - intent: goodbye
+  - action: utter_goodbye
+  
+
+- story: shareChildLocation path
+  steps:
+  - intent: share_child_location
+  - action: utter_share_child_location
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: geoFencingFeature path
+  steps:
+  - intent: geo_fencing_feature
+  - action: utter_geo_fencing_feature
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: socialMediaMonitoring path
+  steps:
+  - intent: social_media_monitoring
+  - action: utter_social_media_monitoring
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: internetFilter path
+  steps:
+  - intent: internet_filter
+  - action: utter_internet_filter
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: blockApp path
+  steps:
+  - intent: block_apps
+  - action: utter_block_app
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: appTimeLimit path
+  steps:
+  - intent: app_time_limit
+  - action: utter_app_time_limit
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: choose_facebook_path
+  steps:
+  - intent: choose_facebook
+  - action: utter_facebook
+
+
+- story: choose_instagram path
+  steps:
+  - intent: choose_instagram
+  - action: utter_instagram
+
+
+- story: choose_snapchat path
+  steps:
+  - intent: choose_snapchat
+  - action: utter_snapchat
+
+
+- story : choose_yes
+  steps:
+  - intent: _yes
+  - action: utter_yes
+
+- story : choose_no
+  steps:
+  - intent: _no
+  - action: utter_no
+  - action : action_end_conversation
