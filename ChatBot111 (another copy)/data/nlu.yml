@@ -1,0 +1,209 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - query solved
+    - problem solved
+    - you answered my question
+    - thank you
+
+# - intent: affirm
+#   examples: |
+#     - yes
+#     - y
+#     - indeed
+#     - of course
+#     - that sounds good
+#     - correct
+
+# - intent: deny
+#   examples: |
+#     - no
+#     - n
+#     - never
+#     - I don't think so
+#     - don't like that
+#     - no way
+#     - not really
+
+# - intent: mood_great
+#   examples: |
+#     - perfect
+#     - great
+#     - amazing
+#     - feeling like a king
+#     - wonderful
+#     - I am feeling very good
+#     - I am great
+#     - I am amazing
+#     - I am going to save the world
+#     - super stoked
+#     - extremely good
+#     - so so perfect
+#     - so good
+#     - so perfect
+
+# - intent: mood_unhappy
+#   examples: |
+#     - my day was horrible
+#     - I am sad
+#     - I don't feel very well
+#     - I am disappointed
+#     - super sad
+#     - I'm so sad
+#     - sad
+#     - very sad
+#     - unhappy
+#     - not good
+#     - not very good
+#     - extremly sad
+#     - so saad
+#     - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent : pricing_platform
+  examples: |
+    - price of mobicip?
+    - different types of categories in membership?
+    - cost?
+
+- intent : explain_Schedules
+  examples: |
+    - How do Schedules work
+    - schedules
+    - What is Schedules?
+    - Schedules in mobicip?
+    - different type of Schedules in mobicip?
+
+- intent : setup_Schedules
+  examples: |
+    - new schedule
+    - create new schedule
+    - How do I create a new schedule
+    - process to create a schedule
+    - steps to create a schedule
+    - how to add new schedule
+  
+- intent : free_time_limit
+  examples: |
+    - Daily Free Time Limit in a day
+    - entertinment period in a day
+    - how to set free time period
+    - upto to how much time we can set free time period
+    - how to set leisure period in a day
+    
+- intent : Vacation_Mode
+  examples: |
+    - remove all restrictions for specific day
+    - what is vaction mode
+    - remove all monitoring settings for a day
+
+- intent : locator_features
+  examples: |
+    - How do I setup Locator features
+    - how can i track location of my family member
+    - how to create boundaries around places
+
+- intent : family_locator_features
+  examples: |
+    - location of all family members
+    - guide me through configuring the family locator feature in the parent app?
+    - steps do I follow to track the locations of all my family members on my app?
+    - How can I activate the device tracking for my entire family in the parent app?
+    - setting up location services for my family in our app; how do I do that?
+
+- intent : share_child_location
+  examples: |
+    - share location to child
+    - How do I enable location sharing with my child?
+    - What's the process for sharing my location with my child?
+    - Can you guide me on how to let my child see my location?
+    - How can I set up location sharing so my child can track me?
+
+- intent : get_child_location
+  examples: |
+    - child location
+    - find my child's current location?
+    - What steps should I take to navigate to where my child is ?
+    - I need to get to my kid's location?
+    - guide me to my child's whereabouts?
+    - assist me in accessing the route to my child's location on Mobicip?
+
+- intent : geo_fencing_feature
+  examples: |
+    - geo fencing feature
+    - setting up a geo-fence for specific locations ?
+    - create safe zones for my child's activities?
+    - process for designating areas like home or school?
+    - I need to set boundaries for my child ?
+    - get notifications from app when my child enters or leaves a place?
+
+- intent : social_media_monitoring
+  examples: |
+    - social media monitoring
+    - online safety
+    - activate monitoring for my child's social media accounts?
+    - start tracking harmful content on my kid's social platforms?
+    - set up alerts for inappropriate activities on my child's Instagram, Facebook, and Snapchat?
+    - I want to monitor my child's social media for bullying and other harmful content?
+    - social media scanning for my child's online safety?
+
+- intent : internet_filter
+  examples: | 
+    - adjust the Internet Filter settings?
+    - modify the default Internet Filter settings for my child's profile?
+    - web filtering options based on my child's age?
+    - change the preset content filters?
+    - my child only sees content that is right for their age on the internet?
+    - manage the automatic content filtering settings for different age groups? 
+
+- intent : block_apps
+  examples: |  
+    - block app
+    - restrict access to certain apps on my device?
+    - prevent specific apps from being used?
+    - disable some apps?
+    - set up app blocks on my child's phone?
+    - app-blocking feature?
+
+- intent : app_time_limit
+  examples: |  
+    - limit time spent on apps?
+    - restricting the duration my kids can use their apps?
+    - setting a usage timer for certain applications?
+    - manage how long apps can be run; how is this done?
+    - time constraints on app activities?
+    - implementing app time controls?
